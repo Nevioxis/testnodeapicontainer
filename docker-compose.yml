@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+
+  api-gateway:
+    container_name: api-gateway
+    image: microservices-workshop:dev
+    restart: on-failure
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/app/src
