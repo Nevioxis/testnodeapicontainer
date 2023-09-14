@@ -5,5 +5,7 @@ services:
     container_name: testapi
     image: image-to-test
     restart: on-failure
+    volume:
+      - ./app:./app
     ports:
       - 3000:3000
